@@ -10,10 +10,20 @@
             grid-template-columns: repeat(7, 1fr);
             row-gap: 20px;
             column-gap: 10px;
+            grid-template-rows: repeat(6, 50px);
         }
 
+        .day{
+            background-color: rgba(211, 211, 211, 0.283);
+            border-radius: 5px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1em;
+        }
         .date{
-            background-color: skyblue;
+            background-color: rgba(155, 219, 244, 0.434);
             border-radius: 5px;
             height: 50px;
             display: flex;
@@ -27,6 +37,13 @@
 
 <body>
     <div class="calender">
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">F</div>
+        <div class="day">S</div>
         <div class="date">29</div>
         <div class="date">30</div>
         <div class="date">31</div>
