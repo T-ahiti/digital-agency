@@ -4,10 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>task-2</title>
+    <style>
+        .container{
+           height: 100vh;
+           display: grid;
+           grid-template-columns: repeat(2,1fr);
+        }
+
+        .first{
+          background-color: red;
+          border-radius: 5px;
+          margin-right: 7px;
+        }
+
+        .second{
+           
+        
+        }
+
+        .up{
+            border-radius: 5px;
+            background-color: orange;
+            height: 50%;
+        
+        }
+
+        .down{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            height: 50%;
+          
+        }
+
+        .three{
+          background-color: violet;
+          margin-right: 7px;
+          margin-top: 7px;
+          border-radius: 5px;
+
+        } 
+
+        .four{
+          background-color: seagreen;
+          margin-top: 7px;
+          border-radius: 5px;
+
+        }
+
+    </style>
 </head>
 
+
 <body>
-    
+    <!-- .container>.first+.second>.up+.down>.three+.four -->
+    <div class="container">
+        <div class="first">
+          1
+        </div>
+        <div class="second">
+            <div class="up">
+              2
+            </div>
+            <div class="down">
+                <div class="three">
+                  3
+                </div>
+                <div class="four">
+                  4
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
