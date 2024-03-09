@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>task-2</title>
     <style>
+        *{
+            color: white;
+            font-size: larger;
+            font-weight: bold;
+        }
         .container{
            height: 100vh;
            display: grid;
@@ -51,6 +56,37 @@
 
         }
 
+        @media screen and (max-width:576px){
+            .container{
+                height: 100vh;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+            }
+        
+            .first{
+                height: 25vh;
+                margin: 0px;
+            }
+
+            .up{
+                height: 25vh;
+                margin: 0px;
+            }
+
+            .down{
+            grid-template-columns: repeat(1,1fr);
+            }
+
+            .three{
+                height: 25vh;
+                margin: 0px;
+            }
+
+            .four{
+                height: 25vh;
+                margin: 0px;
+            }
+        }
     </style>
 </head>
 
