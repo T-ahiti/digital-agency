@@ -10,19 +10,33 @@
             border: 2px solid black;
             height: 100vh;
             border-radius: 10px;
+            padding: 10px;
+            gap: 10px;
+            font-family: ;
         }
 
         .left{
             width: 30vw;
-            background-color: gray;
+            background-color: rgba(128, 128, 128, 0.489);
             border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .right{
             width: 70vw;
-            background-color: palegoldenrod;
+            background-color: rgba(238, 232, 170, 0.484);
             border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
+        @media screen and (max-width:360px){
+            .container{
+               flex-direction: column;     
+            }
         }
     </style>
 
@@ -30,8 +44,8 @@
 
 <body>
     <div class="container">
-        <div class="left">left</div>
-        <div class="right">right</div>
+        <div class="left"><h1>Left</h1></div>
+        <div class="right"><h1>Right</h1></div>
     </div>
 </body>
 
