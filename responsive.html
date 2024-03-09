@@ -10,6 +10,26 @@
             max-width: 1140px;
             margin: 0px auto;
         }
+        .img-container{
+            display: flex;
+        }
+
+        .img-container div{
+            width: 50%;
+        }
+
+        .img-container img{
+           width: 100%;
+        }
+
+        @media screen and (max-width:576px){
+            .img-container{
+                flex-direction: column-reverse;
+            }
+            .img-container div{
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -20,12 +40,19 @@
             <li>viewport meta tag</li>
             <li>css relative unit</li>
             <li>body max width and horizontal centre align</li>
-            <li></li>
+            <li>image fluid</li>
             <li></li>
             <li></li>
             <li></li>
         </ol>
-        <img src="minions.jpg" alt="">
+        <div class="img-container">
+            <div>
+                <img src="minions.jpg" alt="">
+            </div>
+            <div>
+                <img src="tiger.jpg" alt="">
+            </div>
+        </div>
     </header>
 
     <main>
