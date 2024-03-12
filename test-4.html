@@ -4,28 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+
+   <style>
+     .first{
+        display: flex;
+        border: 1px solid black;
+        margin-bottom: 10px;
+        height: 48vh;
+     }
+
+     .second{
+        display: flex;
+        border: 1px solid black;
+        margin-top: 0px;
+        height: 48vh;
+     }
+
+     .first-img{
+        padding: 0px;
+        margin-right: 9px;
+     }
+
+     .second-img{
+        padding: 0px;
+        margin-right: 9px;
+     }
+     
+     .food-1{
+        height: 48vh;
+        width:  419px;
+     }
+
+     .food-2{
+        height: 48vh;
+        width: 419px;
+     }
+
+     @media screen  and (max-width:916px){
+        .first{
+            display: block;
+            height: 100vh;
+        }
+
+        .food-1{
+            width: 100%;
+            height: auto;
+        }
+
+        .second{
+            display: block;
+            height: 100vh;
+        }
+
+        .food-2{
+            width: 100%;
+            height: auto;
+        }
+     }
+   </style>
 </head>
 
 <body>
     <!-- .container>.first^h1{Post Title Will Be here}p{lorem40}button+.second^h1{Post Title Will Be here}p{lorem40}button -->
     <div class="container">
-        <div class="first">
-           <div class="img-1">
 
-           </div>
-           <div class="first-write">
-               <img src="" alt="">
-               <h1>Post Title Will Be here</h1>
-               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit laudantium blanditiis dolorem nesciunt explicabo quae quos temporibus voluptatem architecto cumque consequuntur, corporis velit libero quibusdam modi eveniet harum. Fugiat, animi nostrum tempora neque veniam aspernatur excepturi nemo libero minus obcaecati?</p>
-               <button></button>
-           </div>
-         
+        <div class="first">
+             
+               <div class="first-img">
+               <img src="food-1.jpg" alt="" class="food-1"></div>
+               <div class="first-write">
+                  <h1>Post Title Will Be here</h1>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit laudantium blanditiis dolorem nesciunt explicabo quae quos temporibus voluptatem architecto cumque consequuntur, corporis velit libero quibusdam modi eveniet harum. Fugiat, animi nostrum tempora neque veniam aspernatur excepturi nemo libero minus obcaecati?</p>
+                  <button><span>Read More</span></button>
+               </div>
         </div>
-    <div class="second">
-       <h1>Post Title Will Be here</h1>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, repellat maxime repudiandae reiciendis tempora distinctio nesciunt officia tenetur voluptas fugiat ratione consequatur dicta cumque ad consequuntur est recusandae vero assumenda aperiam rem sit, expedita libero praesentium quod! Vel, voluptatum neque?</p>
-       <button></button> 
-    </div>
+
+        <div class="second">
+               
+               <div class="second-img">
+               <img src="food-2.jpg" alt="" class="food-2"> </div>
+               <div class="second-write">
+                  <h1>Post Title Will Be here</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, repellat maxime repudiandae reiciendis tempora distinctio nesciunt officia tenetur voluptas fugiat ratione consequatur dicta cumque ad consequuntur est recusandae vero assumenda aperiam rem sit, expedita libero praesentium quod! Vel, voluptatum neque?</p>
+                  <button><span>Read More</span></button> 
+               </div>
+
+        </div>
 </div>
 
 </body>
